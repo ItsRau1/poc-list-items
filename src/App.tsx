@@ -1,6 +1,11 @@
+import { DataProvider } from "./contexts/Context";
+import { Router } from "./contexts/Router";
+
 export function App() {
 
   return (
-    <h1>Hello World</h1>
+    <DataProvider>
+      <Router />
+    </DataProvider>
   )
 }
