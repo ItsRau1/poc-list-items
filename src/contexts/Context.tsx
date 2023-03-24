@@ -5,6 +5,7 @@ import {
 } from "react";
 
 import { 
+    CommentType,
     ContextType, 
     DataProviderProps, 
     PostType, 
@@ -21,6 +22,7 @@ export const DataContext = createContext({} as ContextType)
 export function DataProvider({children}: DataProviderProps){
 
     const [posts, setPosts] = useState([] as PostType[])
+    const [comments, setComments] = useState([] as CommentType[])
     const [user, setUser] = useState({} as User)
     const [users, setUsers] = useState([] as User[])
 
@@ -38,10 +40,15 @@ export function DataProvider({children}: DataProviderProps){
         const res = await api.get(`users/${id}`)
         setUser(res.data);
     }
+
+    async function GetComments(id: string | undefined){
+        const res = await api.get(`posts/${id}/comments`)
+        setComments(res.data)
+    }
  
     return(
         <DataContext.Provider
-            value={{ Consume, GetUsers, GetUser, posts, users, user}}
+            value={{ Consume, GetUsers, GetUser, GetComments, posts, comments, users, user}}
         >
             {children}
         </DataContext.Provider>

@@ -6,7 +6,7 @@ import { api } from "../../libs/axios"
 
 export function Post(){
 
-    const { } = useContext(DataContext)
+    const { GetComments, comments} = useContext(DataContext)
     const { id } = useParams()
 
     const [loading, setLoading] = useState(true)
@@ -23,9 +23,8 @@ export function Post(){
                 setLoading(false)
             }
             FilterPost()
+            GetComments(id)
     },[])
-
-    console.log(post)
 
     return(
         <div>
@@ -34,7 +33,20 @@ export function Post(){
                 :
                     post.map(item => {
                         return(
-                            <div>{item.id}</div>
+                            <div>
+                                <h1>{item.id}</h1>
+                                {
+                                    comments.map(comment => {
+
+                                        return(
+                                            <div>
+                                                <p>{comment.email}</p>
+                                                <br />
+                                            </div>
+                                        )
+                                    })
+                                }
+                            </div>
                         )
                     })
             }

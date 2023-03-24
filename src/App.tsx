@@ -1,8 +1,26 @@
-import { ThemeProvider } from "styled-components";
-import { DataProvider } from "./contexts/Context";
-import { Router } from "./contexts/Router";
-import { GlobalStyle } from "./styles/GlobalStyle";
-import { DefaultTheme } from "./styles/themes/DefaultTheme";
+// Utils
+import { 
+  DataProvider, 
+} from "./contexts/Context";
+
+import { 
+  Router,
+} from "./contexts/Router";
+
+
+// Style
+import { 
+  GlobalStyle,
+} from "./styles/GlobalStyle";
+
+import { 
+  ThemeProvider,
+} from "styled-components";
+
+import { 
+  DefaultTheme,
+} from "./styles/themes/DefaultTheme";
+
 
 export function App() {
 

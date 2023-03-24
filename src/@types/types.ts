@@ -28,11 +28,21 @@ export interface User{
     website: string,
 }
 
+export interface CommentType{
+    body: string,
+    email: string,
+    id: number,
+    name: string,
+    postId: number,
+}
+
 export interface ContextType{
     Consume: () => void,
-    posts: PostType[],
+    GetComments: (id: string | undefined) => void,
     GetUser: (id: string | undefined) => void,
     GetUsers: () => void,
+    posts: PostType[],
+    comments: CommentType[],
     users: User[],
     user: User,
 }
