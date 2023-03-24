@@ -26,7 +26,7 @@ export function DataProvider({children}: DataProviderProps){
     const [user, setUser] = useState({} as User)
     const [users, setUsers] = useState([] as User[])
 
-    async function Consume(){
+    async function GetPosts(){
         const res = await api.get('posts')    
         setPosts(res.data)
     }
@@ -48,7 +48,7 @@ export function DataProvider({children}: DataProviderProps){
  
     return(
         <DataContext.Provider
-            value={{ Consume, GetUsers, GetUser, GetComments, posts, comments, users, user}}
+            value={{ GetPosts, GetUsers, GetUser, GetComments, posts, comments, users, user}}
         >
             {children}
         </DataContext.Provider>

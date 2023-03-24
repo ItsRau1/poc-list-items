@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { DataContext } from "../../contexts/Context"
 
 export function Main(){
-    const { Consume, posts, GetUsers, users } = useContext(DataContext)
+    const { GetPosts, posts, GetUsers, users } = useContext(DataContext)
 
     useEffect(()=>{
-        Consume()
+        GetPosts()
         GetUsers()
     }
     ,[]);

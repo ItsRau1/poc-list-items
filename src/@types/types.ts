@@ -37,7 +37,7 @@ export interface CommentType{
 }
 
 export interface ContextType{
-    Consume: () => void,
+    GetPosts: () => void,
     GetComments: (id: string | undefined) => void,
     GetUser: (id: string | undefined) => void,
     GetUsers: () => void,
