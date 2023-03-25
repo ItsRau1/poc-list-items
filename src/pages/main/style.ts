@@ -24,3 +24,7 @@ export const PostUserLink = styled(Link)`
     color: #fff;
     text-decoration: none;
 `
+
+export const PostUserInfo = styled.div`
+
+`
