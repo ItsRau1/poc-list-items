@@ -26,10 +26,11 @@ import {
     PostUserLink, 
     PostUserName 
 } from "./style";
+import { MyLoader } from "./loader";
 
 export function Main(){
     
-    const { GetPosts, posts, GetUsers, users } = useContext(DataContext)
+    const { GetPosts, posts, GetUsers, users, isLoading } = useContext(DataContext)
 
     useEffect(()=>{
         GetPosts()
@@ -39,30 +40,34 @@ export function Main(){
 
     return(
         <MainContainer>
-            {posts.map(post=>{
-                return(
-                    <PostBox key={post.id}>
-                        <PostLinkBox to={`post/${post.id}`}>
-                            <PostUserInfo>
-                                <PostUserLink to={`user/${post.userId}`}>
-                                    <UserCircle size={30} />
-                                    <PostUserName>
-                                        {users[post.userId - 1].username}
-                                    </PostUserName>
-                                </PostUserLink>
-                            </PostUserInfo>
-                            <PostContentInfo>
-                                <PostTitle>
-                                    {post.title}
-                                </PostTitle>
-                                <PostBody>
-                                    {post.body}
-                                </PostBody>
-                            </PostContentInfo>
-                        </PostLinkBox>
-                    </PostBox>
-                )
-            })}
+            { isLoading ?
+                <MyLoader />
+            :
+                posts.map(post=>{
+                    return(
+                        <PostBox key={post.id}>
+                            <PostLinkBox to={`post/${post.id}`}>
+                                <PostUserInfo>
+                                    <PostUserLink to={`user/${post.userId}`}>
+                                        <UserCircle size={30} />
+                                        <PostUserName>
+                                            {users[post.userId - 1].username}
+                                        </PostUserName>
+                                    </PostUserLink>
+                                </PostUserInfo>
+                                <PostContentInfo>
+                                    <PostTitle>
+                                        {post.title}
+                                    </PostTitle>
+                                    <PostBody>
+                                        {post.body}
+                                    </PostBody>
+                                </PostContentInfo>
+                            </PostLinkBox>
+                        </PostBox>
+                    )
+                })
+            }
         </MainContainer>
     )
 }

@@ -60,7 +60,7 @@ export const PostContentInfo = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
-    text-align: center;
+    
 `
 
 export const PostTitle = styled.p`
@@ -69,4 +69,5 @@ export const PostTitle = styled.p`
 `
 
 export const PostBody = styled.p`
+    text-align: center;
 `

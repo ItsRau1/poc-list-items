@@ -3,6 +3,7 @@ import { useParams } from "react-router"
 import { PostType } from "../../@types/types"
 import { DataContext } from "../../contexts/Context"
 import { api } from "../../libs/axios"
+import { Container } from "./style"
 
 export function Post(){
 
@@ -27,7 +28,7 @@ export function Post(){
     },[])
 
     return(
-        <div>
+        <Container>
             {  loading ? 
                     <h1>Loading</h1>
                 :
@@ -50,6 +51,6 @@ export function Post(){
                         )
                     })
             }
-        </div>
+        </Container>
     )
 }
