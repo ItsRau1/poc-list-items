@@ -17,6 +17,16 @@ import {
     Params 
 } from "../../@types/types"
 
+// Icons
+import { 
+    Buildings, 
+    EnvelopeSimple, 
+    Globe, 
+    House, 
+    Phone, 
+    UserCircle 
+} from "@phosphor-icons/react"
+
 // Components
 import { 
     Container, 
@@ -32,15 +42,6 @@ import {
     ProfileUserWebsite 
 } from "./style"
 
-// Icons
-import { 
-    Buildings, 
-    EnvelopeSimple, 
-    Globe, 
-    House, 
-    Phone, 
-    UserCircle 
-} from "@phosphor-icons/react"
 
 export function User(){
 

@@ -1,10 +1,34 @@
-import { UserCircle } from "@phosphor-icons/react";
-import { useContext, useEffect } from "react"
-import { Link } from "react-router-dom";
-import { DataContext } from "../../contexts/Context"
-import { MainContainer, PostBody, PostBox, PostContentInfo, PostLinkBox, PostTitle, PostUserInfo, PostUserLink, PostUserName } from "./style";
+// Utils
+import { 
+    useContext, 
+    useEffect 
+} from "react"
+
+// Context
+import { 
+    DataContext 
+} from "../../contexts/Context"
+
+// Icons
+import { 
+    UserCircle 
+} from "@phosphor-icons/react";
+
+// Components
+import { 
+    MainContainer, 
+    PostBody, 
+    PostBox, 
+    PostContentInfo, 
+    PostLinkBox, 
+    PostTitle, 
+    PostUserInfo, 
+    PostUserLink, 
+    PostUserName 
+} from "./style";
 
 export function Main(){
+    
     const { GetPosts, posts, GetUsers, users } = useContext(DataContext)
 
     useEffect(()=>{
