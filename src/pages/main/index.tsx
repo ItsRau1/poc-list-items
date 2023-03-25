@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react"
 import { Link } from "react-router-dom";
 import { DataContext } from "../../contexts/Context"
+import { MainContainer, PostBox, PostLinkBox, PostUserLink } from "./style";
 
 export function Main(){
     const { GetPosts, posts, GetUsers, users } = useContext(DataContext)
@@ -12,18 +13,18 @@ export function Main(){
     ,[]);
 
     return(
-        <div>
+        <MainContainer>
             {posts.map(post=>{
                 return(
-                    <div key={post.id}>
-                        <Link to={`post/${post.id}`}>
-                            <Link to={`user/${post.userId}`}>{users[post.userId - 1].username}</Link>
+                    <PostBox key={post.id}>
+                        <PostLinkBox to={`post/${post.id}`}>
+                            <PostUserLink to={`user/${post.userId}`}>{users[post.userId - 1].username}</PostUserLink>
                             <h4>{post.title}</h4>
                             <p>{post.body}</p>
-                        </Link>
-                    </div>
+                        </PostLinkBox>
+                    </PostBox>
                 )
             })}
-        </div>
+        </MainContainer>
     )
 }
