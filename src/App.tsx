@@ -27,8 +27,8 @@ export function App() {
   return (
     <DataProvider>
       <ThemeProvider theme={DefaultTheme}>
-        <GlobalStyle />
-        <Router />
+          <GlobalStyle />
+          <Router />
       </ThemeProvider>
     </DataProvider>
   )

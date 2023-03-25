@@ -19,4 +19,12 @@ export const GlobalStyle = createGlobalStyle`
         }
         -webkit-font-smoothing: antialiased;
     }
+    :focus {
+        outline: 0;
+        box-shadow: 0 0 0 2px #006989;
+    }
+
+    #root, body, html {
+        height: 100%;
+    }
 `

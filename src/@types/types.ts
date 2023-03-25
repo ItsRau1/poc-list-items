@@ -45,6 +45,7 @@ export interface ContextType{
     comments: CommentType[],
     users: User[],
     user: User,
+    isLoading: boolean,
 }
 
 export interface PostType{
