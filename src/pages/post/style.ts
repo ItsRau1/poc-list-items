@@ -9,7 +9,10 @@ export const Container = styled.div`
     overflow: hidden;
 
     @media(max-width: 768px){
-        padding: 2rem 4rem;
+        padding: 3rem 1rem;
+        overflow: auto;
+        align-items: flex-start;
+        margin: 0 0 -3rem;
     }
 `
 
@@ -27,9 +30,9 @@ export const PostBox = styled.div`
 
     @media(max-width: 768px){
         width: auto;
-        height: 80%;
         gap: 2rem; 
-        margin: 0 0 -5rem;
+        margin: 0 0 -7rem;
+        padding: 3rem 1rem 4rem;
     }
 `
 

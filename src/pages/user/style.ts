@@ -7,6 +7,13 @@ export const Container = styled.div`
     align-items: flex-end;
     justify-content: center;
     overflow: hidden;
+
+    @media(max-width: 768px){
+        padding: 3rem 1rem;
+        overflow: auto;
+        align-items: flex-start;
+        margin: 0 0 -3rem;
+    }
 `
 
 export const ProfileBox = styled.div`
@@ -25,6 +32,10 @@ export const ProfileBox = styled.div`
     gap: 1.5rem;
     @media(max-width: 768px){
         gap: 5rem;
+        height: auto;
+        width: auto;
+        margin: 0 0 -7rem;
+        padding: 3rem 1rem 4rem;
     }
 `
 
