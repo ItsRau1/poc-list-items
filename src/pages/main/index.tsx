@@ -1,7 +1,8 @@
 // Utils
 import { 
     useContext, 
-    useEffect 
+    useEffect, 
+    useState
 } from "react"
 
 // Context
@@ -35,10 +36,12 @@ import {
 export function Main(){
     
     const { GetPosts, posts, GetUsers, users, isLoading } = useContext(DataContext)
+    const [loading, setLoading] = useState(true)
 
     useEffect(()=>{
         GetPosts()
         GetUsers()
+        setTimeout(()=>{setLoading(false)}, 50)
     }
     ,[]);
 
@@ -55,7 +58,7 @@ export function Main(){
                                     <PostUserLink href={`user/${post.userId}`}>
                                         <UserCircle size={30} />
                                         <PostUserName>
-                                            {users[post.userId - 1].username}
+                                            {loading ? "Carregando" : users[post.userId - 1].username}
                                         </PostUserName>
                                     </PostUserLink>
                                 </PostUserInfo>
