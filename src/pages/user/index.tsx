@@ -41,6 +41,7 @@ import {
     ProfileUserNamesBox, 
     ProfileUserWebsite 
 } from "./style"
+import { Loading } from "../loading"
 
 
 export function User(){
@@ -57,7 +58,7 @@ export function User(){
     return(
         <Container>
             { isLoading ?
-                <h1> Carregando </h1>
+                <Loading />
             :
                 <ProfileBox>
                     <ProfileUserNamesBox>

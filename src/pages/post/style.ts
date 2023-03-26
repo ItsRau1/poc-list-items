@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -32,7 +32,7 @@ export const PostBody = styled.p`
     text-align: center;
 `
 
-export const PostWriterInfo = styled(Link)`
+export const PostWriterInfo = styled(NavLink)`
     display: flex;
     text-decoration: none;
     color: ${props=> props.theme["gray-100"]};

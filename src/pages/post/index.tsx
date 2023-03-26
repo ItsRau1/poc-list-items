@@ -4,6 +4,7 @@ import { useParams } from "react-router"
 import { PostType, User } from "../../@types/types"
 import { DataContext } from "../../contexts/Context"
 import { api } from "../../libs/axios"
+import { Loading } from "../loading"
 import { CommentBody, CommentBox, CommentContainer, CommentName, CommentUserInfo, CommentUserName, Container, PostBody, PostBox, PostMainInfo, PostTitle, PostWriterInfo, PostWriterName } from "./style"
 
 export function Post(){
@@ -27,25 +28,17 @@ export function Post(){
         GetComments(id)
     },[])
 
-    // async function GetCommentUser(email){
-    //     let user = []
-    //     await api.get('users')
-    //         .then(res => {
-    //             console.log(res.data.map(user => user.email))
-    //         })
-    // }
-
     return(
         <Container>
             {  isLoading ? 
-                    <h1>Loading</h1>
+                    <Loading />
                 :
                     post.map(item => {
                         return(
                             <PostBox key={item.id}>
                                 <PostMainInfo>
                                     <PostTitle>{item.title}</PostTitle>
-                                    <PostWriterInfo to={`user/${item.userId}`}>
+                                    <PostWriterInfo to={`../user/${item.userId}`}>
                                         <UserCircle size={20}/>
                                         <PostWriterName>
                                             {user.username}

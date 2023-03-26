@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
@@ -20,7 +20,7 @@ export const PostBox = styled.div`
     }
 `
 
-export const PostLinkBox = styled(Link)`
+export const PostLinkBox = styled(NavLink)`
     color: ${props=>props.theme["white"]};
     text-decoration: none;
     padding: 1rem 0.5rem;
@@ -30,7 +30,7 @@ export const PostLinkBox = styled(Link)`
     gap: 0.1rem;
 `
 
-export const PostUserLink = styled(Link)`
+export const PostUserLink = styled(NavLink)`
     color: ${props=>props.theme["gray-100"]};
     text-decoration: none;
     display: flex;
