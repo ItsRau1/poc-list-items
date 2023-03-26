@@ -45,7 +45,7 @@ import {
     PostMainInfo, 
     PostTitle, 
     PostWriterInfo, 
-    PostWriterName ,
+    PostWriterName,
 } from "./style"
 
 export function Post(){
@@ -79,7 +79,7 @@ export function Post(){
                             <PostBox key={item.id}>
                                 <PostMainInfo>
                                     <PostTitle>{item.title}</PostTitle>
-                                    <PostWriterInfo to={`../user/${item.userId}`}>
+                                    <PostWriterInfo href={`../user/${item.userId}`}>
                                         <UserCircle size={20}/>
                                         <PostWriterName>
                                             {user.username}

@@ -20,16 +20,17 @@ import {
 import { 
   DefaultTheme,
 } from "./styles/themes/DefaultTheme";
+import { BrowserRouter } from "react-router-dom";
 
 
 export function App() {
 
   return (
     <DataProvider>
-      <ThemeProvider theme={DefaultTheme}>
-          <GlobalStyle />
-          <Router />
-      </ThemeProvider>
+        <ThemeProvider theme={DefaultTheme}>
+            <GlobalStyle />
+            <Router />
+        </ThemeProvider>
     </DataProvider>
   )
 }

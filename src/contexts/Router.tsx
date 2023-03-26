@@ -1,5 +1,6 @@
 // Utils
 import { 
+    BrowserRouter,
     Route, 
     Routes,
 } from "react-router-dom";
@@ -24,12 +25,14 @@ import {
 
 export function Router(){
     return(
-        <Routes>
-            <Route path="/" element={<MainLayout />}>
-                <Route path="/" element={<Main />}/>
-                <Route path="user/:id" element={<User />} />
-                <Route path="post/:id" element={<Post />} />
-            </Route>
-        </Routes>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<MainLayout />}>
+                    <Route index element={<Main />}/>
+                    <Route path="user/:id" element={<User />} />
+                    <Route path="post/:id" element={<Post />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     )
 }

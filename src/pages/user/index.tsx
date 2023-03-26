@@ -99,7 +99,7 @@ export function User(){
                         </ProfileUserInfoBox>
                         <ProfileUserInfoBox>
                             <Globe size={24} />
-                            <ProfileUserWebsite href={"www."+user.website}>
+                            <ProfileUserWebsite href={"http://"+user.website}>
                                 {user.website}
                             </ProfileUserWebsite>
                         </ProfileUserInfoBox>

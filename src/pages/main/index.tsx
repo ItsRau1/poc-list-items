@@ -50,9 +50,9 @@ export function Main(){
                 posts.map(post=>{
                     return(
                         <PostBox key={post.id}>
-                            <PostLinkBox to={`post/${post.id}`}>
+                            <PostLinkBox href={`post/${post.id}`}>
                                 <PostUserInfo>
-                                    <PostUserLink to={`user/${post.userId}`}>
+                                    <PostUserLink href={`user/${post.userId}`}>
                                         <UserCircle size={30} />
                                         <PostUserName>
                                             {users[post.userId - 1].username}

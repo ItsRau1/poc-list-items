@@ -20,7 +20,7 @@ export const PostBox = styled.div`
     }
 `
 
-export const PostLinkBox = styled(NavLink)`
+export const PostLinkBox = styled.a`
     color: ${props=>props.theme["white"]};
     text-decoration: none;
     padding: 1rem 0.5rem;
@@ -30,7 +30,7 @@ export const PostLinkBox = styled(NavLink)`
     gap: 0.1rem;
 `
 
-export const PostUserLink = styled(NavLink)`
+export const PostUserLink = styled.a`
     color: ${props=>props.theme["gray-100"]};
     text-decoration: none;
     display: flex;
