@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
     flex: 1;
@@ -16,6 +16,15 @@ export const Container = styled.div`
     }
 `
 
+const first = keyframes`
+    from{
+        transform: translateY(500%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+`
+
 export const PostBox = styled.div`
     background-color: ${props=> props.theme["purple-500"]};
     width: 75%;
@@ -27,6 +36,7 @@ export const PostBox = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    animation: ${first} 0.5s cubic-bezier(0.94, 0.62, 0.05, 0.95);
 
     @media(max-width: 768px){
         width: auto;

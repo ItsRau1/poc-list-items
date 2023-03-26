@@ -1,5 +1,4 @@
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import styled, { keyframes }  from "styled-components";
 
 export const MainContainer = styled.div`
     background-color: ${(props)=>props.theme['background']};
@@ -11,6 +10,15 @@ export const MainContainer = styled.div`
     }
 `
 
+const first = keyframes`
+    from{
+        transform: translateY(500%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+`
+
 export const PostBox = styled.div`
     background-color: ${(props)=>props.theme['gray-900']}; 
     margin: 0 0 2rem;
@@ -18,6 +26,7 @@ export const PostBox = styled.div`
     border-radius: 8px;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s, text 0.3s;
+    animation: ${first} 0.5s cubic-bezier(0.94, 0.62, 0.05, 0.95);
 
     &:hover{
         transform: scale(1.02);
