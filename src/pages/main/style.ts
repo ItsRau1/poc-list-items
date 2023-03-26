@@ -9,14 +9,20 @@ export const MainContainer = styled.div`
 export const PostBox = styled.div`
     background-color: ${(props)=>props.theme['gray-900']}; 
     margin: 0 0 2rem;
-    padding: 1rem 0.5rem;
+
     border-radius: 8px;
     box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, text 0.3s;
+
+    &:hover{
+        transform: scale(1.02);
+    }
 `
 
 export const PostLinkBox = styled(Link)`
     color: ${props=>props.theme["white"]};
     text-decoration: none;
+    padding: 1rem 0.5rem;
     letter-spacing: 0.5px;
     display: flex;
     flex-direction: column;

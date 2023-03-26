@@ -40,7 +40,7 @@ export function DataProvider({children}: DataProviderProps){
         setIsLoading(false)
     }
 
-    async function GetUser(id: string | undefined){
+    async function GetUser(id: string | undefined | number){
         const res = await api.get(`users/${id}`)
         setUser(res.data);
         setIsLoading(false)

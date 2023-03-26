@@ -39,7 +39,7 @@ export interface CommentType{
 export interface ContextType{
     GetPosts: () => void,
     GetComments: (id: string | undefined) => void,
-    GetUser: (id: string | undefined) => void,
+    GetUser: (id: string | undefined | number) => void,
     GetUsers: () => void,
     posts: PostType[],
     comments: CommentType[],
@@ -49,7 +49,7 @@ export interface ContextType{
 }
 
 export interface PostType{
-    id: number,
+    id: number | string,
     userId: number,
     title: string,
     body: string,

@@ -1,24 +1,20 @@
 import ContentLoader from "react-content-loader"
 
 export function MyLoader(){
-    return (
-  <ContentLoader 
-    speed={2}
-    width={1349}
-    height={1800}
-    viewBox="0 0 1349 1800"
-    backgroundColor="#1f1b23"
-    foregroundColor="#4A4154"
-  >
-    <rect x="47" y="63" rx="3" ry="3" width="262" height="5" /> 
-    <rect x="58" y="49" rx="3" ry="3" width="52" height="6" /> 
-    <rect x="42" y="76" rx="3" ry="3" width="504" height="5" /> 
-    <circle cx="48" cy="53" r="7" /> 
-    <rect x="369" y="80" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="221" y="86" rx="0" ry="0" width="159" height="6" /> 
-    <rect x="475" y="265" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="485" y="275" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="495" y="285" rx="0" ry="0" width="56" height="0" /> 
+  return (
+    <ContentLoader 
+      speed={1}
+      width={1100}
+      height={500}
+      viewBox="0 0 1100 500"
+      backgroundColor="#1f1b23"
+      foregroundColor="#4A4154"
+    >
+    <rect x="-65" y="-120" rx="3" ry="3" width="67" height="8" /> 
+    <circle cx="-78" cy="-115" r="9" /> 
+    <rect x="676" y="168" rx="0" ry="0" width="72" height="0" /> 
+    <rect x="688" y="181" rx="0" ry="0" width="72" height="0" /> 
+    <rect x="701" y="194" rx="0" ry="0" width="72" height="0" /> 
     <rect x="53" y="1726" rx="3" ry="3" width="262" height="5" /> 
     <rect x="60" y="1712" rx="3" ry="3" width="52" height="6" /> 
     <rect x="44" y="1739" rx="3" ry="3" width="504" height="5" /> 
@@ -67,12 +63,7 @@ export function MyLoader(){
     <circle cx="46" cy="1229" r="7" /> 
     <rect x="369" y="1256" rx="0" ry="0" width="56" height="0" /> 
     <rect x="221" y="1262" rx="0" ry="0" width="159" height="6" /> 
-    <rect x="56" y="138" rx="3" ry="3" width="262" height="5" /> 
-    <rect x="63" y="124" rx="3" ry="3" width="52" height="6" /> 
-    <rect x="47" y="151" rx="3" ry="3" width="504" height="5" /> 
-    <circle cx="51" cy="128" r="7" /> 
-    <rect x="374" y="155" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="226" y="161" rx="0" ry="0" width="159" height="6" /> 
+    <rect x="571" y="144" rx="0" ry="0" width="82" height="0" /> 
     <rect x="49" y="1164" rx="3" ry="3" width="262" height="5" /> 
     <rect x="56" y="1150" rx="3" ry="3" width="52" height="6" /> 
     <rect x="40" y="1177" rx="3" ry="3" width="504" height="5" /> 
@@ -85,12 +76,12 @@ export function MyLoader(){
     <circle cx="47" cy="1080" r="7" /> 
     <rect x="370" y="1107" rx="0" ry="0" width="56" height="0" /> 
     <rect x="222" y="1113" rx="0" ry="0" width="159" height="6" /> 
-    <rect x="51" y="213" rx="3" ry="3" width="262" height="5" /> 
-    <rect x="58" y="199" rx="3" ry="3" width="52" height="6" /> 
-    <rect x="42" y="226" rx="3" ry="3" width="504" height="5" /> 
-    <circle cx="46" cy="203" r="7" /> 
-    <rect x="369" y="230" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="221" y="236" rx="0" ry="0" width="159" height="6" /> 
+    <rect x="93" y="31" rx="3" ry="3" width="383" height="6" /> 
+    <rect x="103" y="10" rx="3" ry="3" width="77" height="9" /> 
+    <rect x="79" y="49" rx="3" ry="3" width="739" height="6" /> 
+    <circle cx="86" cy="17" r="11" /> 
+    <rect x="561" y="56" rx="0" ry="0" width="82" height="0" /> 
+    <rect x="344" y="64" rx="0" ry="0" width="233" height="9" /> 
     <rect x="50" y="1013" rx="3" ry="3" width="262" height="5" /> 
     <rect x="57" y="999" rx="3" ry="3" width="52" height="6" /> 
     <rect x="41" y="1026" rx="3" ry="3" width="504" height="5" /> 
@@ -103,18 +94,18 @@ export function MyLoader(){
     <circle cx="46" cy="930" r="7" /> 
     <rect x="369" y="957" rx="0" ry="0" width="56" height="0" /> 
     <rect x="221" y="963" rx="0" ry="0" width="159" height="6" /> 
-    <rect x="54" y="285" rx="3" ry="3" width="262" height="5" /> 
-    <rect x="61" y="271" rx="3" ry="3" width="52" height="6" /> 
-    <rect x="45" y="298" rx="3" ry="3" width="504" height="5" /> 
-    <circle cx="49" cy="275" r="7" /> 
-    <rect x="372" y="302" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="224" y="308" rx="0" ry="0" width="159" height="6" /> 
-    <rect x="54" y="360" rx="3" ry="3" width="262" height="5" /> 
-    <rect x="61" y="346" rx="3" ry="3" width="52" height="6" /> 
-    <rect x="45" y="373" rx="3" ry="3" width="504" height="5" /> 
-    <circle cx="49" cy="350" r="7" /> 
-    <rect x="372" y="377" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="224" y="383" rx="0" ry="0" width="159" height="6" /> 
+    <rect x="98" y="137" rx="3" ry="3" width="383" height="6" /> 
+    <rect x="107" y="116" rx="3" ry="3" width="77" height="9" /> 
+    <rect x="84" y="156" rx="3" ry="3" width="739" height="6" /> 
+    <circle cx="89" cy="121" r="11" /> 
+    <rect x="565" y="162" rx="0" ry="0" width="82" height="0" /> 
+    <rect x="347" y="170" rx="0" ry="0" width="233" height="9" /> 
+    <rect x="98" y="247" rx="3" ry="3" width="383" height="6" /> 
+    <rect x="107" y="226" rx="3" ry="3" width="77" height="9" /> 
+    <rect x="81" y="270" rx="3" ry="3" width="739" height="6" /> 
+    <circle cx="89" cy="233" r="11" /> 
+    <rect x="563" y="278" rx="0" ry="0" width="82" height="0" /> 
+    <rect x="345" y="286" rx="0" ry="0" width="233" height="9" /> 
     <rect x="54" y="866" rx="3" ry="3" width="262" height="5" /> 
     <rect x="61" y="852" rx="3" ry="3" width="52" height="6" /> 
     <rect x="45" y="879" rx="3" ry="3" width="504" height="5" /> 
@@ -127,24 +118,13 @@ export function MyLoader(){
     <circle cx="46" cy="782" r="7" /> 
     <rect x="369" y="809" rx="0" ry="0" width="56" height="0" /> 
     <rect x="221" y="815" rx="0" ry="0" width="159" height="6" /> 
-    <rect x="51" y="435" rx="3" ry="3" width="262" height="5" /> 
-    <rect x="58" y="421" rx="3" ry="3" width="52" height="6" /> 
-    <rect x="42" y="448" rx="3" ry="3" width="504" height="5" /> 
-    <circle cx="46" cy="425" r="7" /> 
-    <rect x="369" y="452" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="221" y="458" rx="0" ry="0" width="159" height="6" /> 
-    <rect x="52" y="509" rx="3" ry="3" width="262" height="5" /> 
-    <rect x="59" y="495" rx="3" ry="3" width="52" height="6" /> 
-    <rect x="43" y="522" rx="3" ry="3" width="504" height="5" /> 
-    <circle cx="47" cy="499" r="7" /> 
-    <rect x="370" y="526" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="222" y="532" rx="0" ry="0" width="159" height="6" /> 
-    <rect x="51" y="584" rx="3" ry="3" width="262" height="5" /> 
-    <rect x="58" y="570" rx="3" ry="3" width="52" height="6" /> 
-    <rect x="42" y="597" rx="3" ry="3" width="504" height="5" /> 
-    <circle cx="46" cy="574" r="7" /> 
-    <rect x="369" y="601" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="221" y="607" rx="0" ry="0" width="159" height="6" /> 
+    <rect x="148" y="593" rx="3" ry="3" width="335" height="6" /> 
+    <rect x="258" y="596" rx="3" ry="3" width="262" height="5" /> 
+    <rect x="265" y="582" rx="3" ry="3" width="52" height="6" /> 
+    <rect x="249" y="609" rx="3" ry="3" width="504" height="5" /> 
+    <circle cx="253" cy="586" r="7" /> 
+    <rect x="576" y="613" rx="0" ry="0" width="56" height="0" /> 
+    <rect x="428" y="619" rx="0" ry="0" width="159" height="6" /> 
     <rect x="50" y="659" rx="3" ry="3" width="262" height="5" /> 
     <rect x="57" y="645" rx="3" ry="3" width="52" height="6" /> 
     <rect x="41" y="672" rx="3" ry="3" width="504" height="5" /> 
@@ -156,7 +136,25 @@ export function MyLoader(){
     <rect x="44" y="739" rx="3" ry="3" width="504" height="5" /> 
     <circle cx="48" cy="716" r="7" /> 
     <rect x="371" y="743" rx="0" ry="0" width="56" height="0" /> 
-    <rect x="223" y="749" rx="0" ry="0" width="159" height="6" />
-  </ContentLoader>
-    )
+    <rect x="223" y="749" rx="0" ry="0" width="159" height="6" /> 
+    <rect x="98" y="333" rx="3" ry="3" width="383" height="6" /> 
+    <rect x="108" y="313" rx="3" ry="3" width="77" height="9" /> 
+    <rect x="84" y="351" rx="3" ry="3" width="739" height="6" /> 
+    <circle cx="90" cy="318" r="11" /> 
+    <rect x="565" y="358" rx="0" ry="0" width="82" height="0" /> 
+    <rect x="347" y="367" rx="0" ry="0" width="233" height="9" /> 
+    <rect x="101" y="401" rx="3" ry="3" width="383" height="6" /> 
+    <rect x="112" y="381" rx="3" ry="3" width="77" height="9" /> 
+    <rect x="87" y="419" rx="3" ry="3" width="739" height="6" /> 
+    <circle cx="93" cy="386" r="11" /> 
+    <rect x="568" y="426" rx="0" ry="0" width="82" height="0" /> 
+    <rect x="350" y="435" rx="0" ry="0" width="233" height="9" /> 
+    <rect x="105" y="478" rx="3" ry="3" width="383" height="6" /> 
+    <rect x="116" y="457" rx="3" ry="3" width="77" height="9" /> 
+    <rect x="92" y="496" rx="3" ry="3" width="739" height="6" /> 
+    <circle cx="98" cy="463" r="11" /> 
+    <rect x="573" y="503" rx="0" ry="0" width="82" height="0" /> 
+    <rect x="355" y="511" rx="0" ry="0" width="233" height="9" />
+    </ContentLoader>
+  )
 }
