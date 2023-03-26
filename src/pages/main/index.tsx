@@ -26,7 +26,10 @@ import {
     PostUserLink, 
     PostUserName 
 } from "./style";
-import { Loading } from "../loading";
+
+import { 
+    Loading 
+} from "../loading";
 
 
 export function Main(){

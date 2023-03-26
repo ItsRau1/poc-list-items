@@ -1,22 +1,63 @@
-import { UserCircle } from "@phosphor-icons/react"
-import { useContext, useEffect, useState } from "react"
-import { useParams } from "react-router"
-import { PostType, User } from "../../@types/types"
-import { DataContext } from "../../contexts/Context"
-import { api } from "../../libs/axios"
-import { Loading } from "../loading"
-import { CommentBody, CommentBox, CommentContainer, CommentName, CommentUserInfo, CommentUserName, Container, PostBody, PostBox, PostMainInfo, PostTitle, PostWriterInfo, PostWriterName } from "./style"
+// Utils
+import { 
+    useContext, 
+    useEffect, 
+    useState,
+} from "react"
+
+import { 
+    useParams,
+} from "react-router"
+
+import { 
+    api, 
+} from "../../libs/axios"
+
+import { 
+    PostType, 
+} from "../../@types/types"
+
+// Context
+import { 
+    DataContext,
+} from "../../contexts/Context"
+
+// Icons
+import { 
+    UserCircle, 
+} from "@phosphor-icons/react"
+
+// Components
+import { 
+    Loading 
+} from "../loading"
+
+import { 
+    CommentBody, 
+    CommentBox, 
+    CommentContainer, 
+    CommentName, 
+    CommentUserInfo, 
+    CommentUserName, 
+    Container, 
+    PostBody, 
+    PostBox, 
+    PostMainInfo, 
+    PostTitle, 
+    PostWriterInfo, 
+    PostWriterName ,
+} from "./style"
 
 export function Post(){
 
     const { GetComments, GetUser, comments, user, isLoading} = useContext(DataContext)
     const { id } = useParams()
 
-    const [post, setPost] = useState() as Array<PostType[]>
+    const [post, setPost] = useState<PostType[]>()
 
     useEffect(() => {
         const FilterPost = async () => {
-            let pos:Array<PostType> = []
+            let pos:Array<PostType[]> = []
             await api.get('posts')
                 .then(res => {
                     pos.push(res.data.filter((post:PostType) => post.id == id))
@@ -33,7 +74,7 @@ export function Post(){
             {  isLoading ? 
                     <Loading />
                 :
-                    post.map(item => {
+                    post!.map(item => {
                         return(
                             <PostBox key={item.id}>
                                 <PostMainInfo>

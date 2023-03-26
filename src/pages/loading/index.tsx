@@ -1,3 +1,4 @@
+// Components
 import { LoadingContainer } from "./style";
 
 export function Loading(){

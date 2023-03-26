@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -8,7 +9,7 @@ export const Container = styled.div`
     padding: 0.1rem 0;
 `
 
-export const Contacts = styled.a`
+export const Contacts = styled(Link)`
     padding: 0.1rem;
     border-radius: 50%;
     display: flex;
