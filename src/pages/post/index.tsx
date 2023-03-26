@@ -58,7 +58,6 @@ export function Post(){
                                 <CommentContainer>
                                     {
                                         comments.map(comment => {
-
                                             return(
                                                 <CommentBox key={comment.id}>
                                                     <CommentUserInfo>

@@ -26,7 +26,8 @@ import {
     PostUserLink, 
     PostUserName 
 } from "./style";
-import { MyLoader } from "./loader";
+import { Loading } from "../loading";
+
 
 export function Main(){
     
@@ -41,7 +42,7 @@ export function Main(){
     return(
         <MainContainer>
             { isLoading ?
-                <MyLoader />
+                <Loading />
             :
                 posts.map(post=>{
                     return(
