@@ -7,6 +7,10 @@ export const Container = styled.div`
     gap: 1rem;
     background-color: ${props=> props.theme["background-footer"]};
     padding: 0.1rem 0;
+    @media(max-width: 768px){
+        padding: 0.5rem;
+        gap: 2rem;
+    }
 `
 
 export const Contacts = styled(Link)`
@@ -24,5 +28,7 @@ export const Contacts = styled(Link)`
         color: ${props => props.theme["purple-300"]};
         cursor: pointer;
     }
-
+    @media(max-width: 768px){
+        padding: 0.5rem;
+    }
 `

@@ -7,6 +7,10 @@ export const Container = styled.div`
     justify-content: center;
     background-color: ${props=> props.theme["background"]};
     overflow: hidden;
+
+    @media(max-width: 768px){
+        padding: 2rem 4rem;
+    }
 `
 
 export const PostBox = styled.div`
@@ -20,11 +24,22 @@ export const PostBox = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    @media(max-width: 768px){
+        width: auto;
+        height: 80%;
+        gap: 2rem; 
+        margin: 0 0 -5rem;
+    }
 `
 
 export const PostTitle = styled.p`
     font-weight: 700;
     font-size: 1.5rem;
+
+    @media(max-width: 768px){
+        font-size: 1.5rem;
+    }
 `
 
 export const PostBody = styled.p`
@@ -65,6 +80,10 @@ export const CommentContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    @media(max-width: 768px){
+        margin: 2rem 0 0;
+        gap: 2rem;
+    }
 `
 
 export const CommentBox = styled.div`

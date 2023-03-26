@@ -5,6 +5,10 @@ export const MainContainer = styled.div`
     background-color: ${(props)=>props.theme['background']};
     flex: 1;
     padding: 5rem;
+    
+    @media(max-width: 768px){
+        padding: 2rem 4rem;
+    }
 `
 
 export const PostBox = styled.div`

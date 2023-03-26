@@ -23,12 +23,20 @@ export const ProfileBox = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
+    @media(max-width: 768px){
+        gap: 5rem;
+    }
 `
 
 export const ProfileUserNamesBox = styled.div`
     display: flex;
     align-items: center;
     gap: 1rem;
+    @media(max-width: 768px){
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 `
 
 export const ProfileName = styled.p`
@@ -85,4 +93,8 @@ export const ProfileUserInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;  
+    @media(max-width: 768px){
+        gap: 3rem;
+        font-size: 1.2rem;
+    }
 `
