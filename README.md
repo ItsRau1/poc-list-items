@@ -41,7 +41,7 @@ Também é uma maneira bem simples de se conseguir utilizar.
 
 Clone este repositório em uma pasta de sua preferência com o seguinte comando 
 
-`git clone https://github.com/ItsRau1/CRUD.git`
+`git clone https://github.com/ItsRau1/technical-test.git`
 
 #### Segundo passo 
 
